@@ -1,0 +1,41 @@
+body {
+  background-color: orange;
+  font-family: Arial;
+  color: white;
+}
+
+
+li {
+  display: inline;
+}
+
+ul {
+  float: right;
+}
+
+h1 {
+  display: inline;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+.name {
+  background-color: gray;
+  font-size: 25px;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  padding-left: 7px;
+  position: fixed;
+  width: 100%
+}
+
+.xbox {
+  border: 5px solid black;
+  clear: right;
+  float: left;
+  margin: 10px;
+}
