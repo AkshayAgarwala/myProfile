@@ -4,12 +4,11 @@ body {
   color: white;
 }
 
-
-li {
+ul.menu li {
   display: inline;
 }
 
-ul {
+.menu {
   float: right;
 }
 
@@ -17,25 +16,125 @@ h1 {
   display: inline;
 }
 
-ul li a {
+ul.menu, ul.menu li, a {
   text-decoration: none;
   color: white;
   margin: 5px;
 }
-.name {
-  background-color: gray;
-  font-size: 25px;
-  display: inline-block;
-  bottom: 0;
-  left: 0;
-  padding-left: 7px;
-  position: fixed;
-  width: 100%
+
+h4 {
+  clear: right;
 }
 
-.xbox {
-  border: 5px solid black;
+.name {
+  background-color: gray;
+  font-size: 20px;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  padding-right: 15px;
+  position: fixed;
+  width: 25%;
+  text-align: center;
+}
+
+#main {
+  width: 100%;
+}
+
+.pics {
   clear: right;
   float: left;
-  margin: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.pics img {
+  width: inherit;
+  height: 250px;
+}
+
+.title {
+  text-align: center;
+  color: black;
+  margin-top: 0px;
+}
+
+.info {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+ul.jobs {
+  list-style-type: square;
+}
+
+.listtitle{
+  margin-bottom: 0px;
+  color: black;
+}
+
+.jobs, .schools {
+  margin-top: 5px;
+  color: black;
+}
+
+span {
+  color: blue;
+}
+
+.mugshot {
+  width: 35%;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  #gallery, #profile {
+    display: none;
+  }
+
+  #navagation li {
+    display: block;
+    font-size: 20px;
+    margin: 80px;
+  }
+
+  #navagation {
+    float: none;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .pics {
+    width: 100px;
+    height: 100px;
+  }
+
+  .pics img {
+    height: 60px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .mugshot {
+    width: 50%;
+  }
+
+  .pics {
+    width: 250px;
+    height: 250px;
+  }
+
+  .pics img {
+    height: 200px;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  /*This is the default...*/
+
+
 }
